@@ -1,7 +1,35 @@
-body{
-  --buttoniconbackground-color:#225A95;
-  --main-background:#12131A;
-  --second-background:#191925;
-  --text-color:#FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+  --buttoniconbackground-color: #225A95;
+  --main-background: #12131A;
+  --second-background: #191925;
+  --text-color: #FFFFFF;
 }
 
+/* HeaderTop */
+.appbar {
+  background-color: var(--main-background) !important;
+}
+
+.logoText {
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 30px !important;
+  letter-spacing: 0.016em !important;
+}
+
+.logotagline {
+  position: absolute;
+  left: 75px;
+  top: 25px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.016em;
+  color: #5494A3;
+}
