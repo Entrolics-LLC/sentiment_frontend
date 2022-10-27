@@ -60,3 +60,89 @@ body {
   background: #1A1A24;
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
+/* Bottom Header */
+.bottom-header {
+  background-color: var(--second-background) !important;
+  flex-wrap: nowrap;
+  display: flex;
+ 
+}
+
+.left {
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.leftText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 5px;
+}
+
+.right {
+  display: flex;
+  margin-left: 10px;
+  /* align-self: flex-end !important; */
+  position: absolute;
+  right: 0px;
+  color: var(--text-color);
+  align-items: center;
+}
+.container{
+  display: flex;
+ background-color: #FFFFFF;
+}
+.button {
+  /* position: absolute; */
+  /* font-size: 10px; */
+  width: 125px;
+  height: 42px;
+  background-color: var(--buttoniconbackground-color);
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.016em;
+  color: var(--text-color);
+  text-align: center;
+  margin-right: 2px;
+}
+
+.btn-icon {
+  vertical-align: middle;
+  /* padding: 4px !important; */
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.iconBox {
+  width: 31px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--buttoniconbackground-color);
+}
+
+.icon {
+  font-size: 18px !important;
+  vertical-align: middle !important;
+}
+
+@media screen and (max-width:800px) {
+  .bottom-header {
+    flex-wrap: wrap;
+  }
+  .right{
+    position: relative;
+
+  }
+}
