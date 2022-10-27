@@ -58,7 +58,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 49px;
-  height: 380px;
+  height: 430px;
   left: 9px;
   top: 160px;
   background: #1A1A24;
@@ -75,9 +75,9 @@ body {
   display: flex;
   position: absolute;
   width: 1150px;
-  height: 380px;
+  height: 430px;
   left: 64px;
-  top: 160px;
+  top: 170px !important;
   background: #1A1A24;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -88,8 +88,8 @@ body {
   background-color: var(--second-background) !important;
   flex-wrap: nowrap;
   display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 30px ;
+  padding-right: 30px !important;
 }
 
 
@@ -141,6 +141,7 @@ body {
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
   color: var(--text-color);
   border-radius: 5px;
+  margin: 7px;
 }
 
 .buttonText {
@@ -185,7 +186,7 @@ body {
   }
 
   .sideBar {
-    top: 200px;
+    top: 170px;
   }
 }
 
