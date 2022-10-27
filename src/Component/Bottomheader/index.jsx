@@ -1,14 +1,14 @@
 import React from 'react'
-import {CiHome} from 'react-icons/ci';
-import {TiExport} from 'react-icons/ti';
-import {AiOutlineBarChart} from 'react-icons/ai';
-import {FaArrowAltCircleUp} from 'react-icons/fa';
+import { CiHome } from 'react-icons/ci';
+import { TiExport } from 'react-icons/ti';
+import { AiOutlineBarChart } from 'react-icons/ai';
+import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 const Headerbottom = () => {
     return (
         <>
             <div className='bottom-header'>
-               
+
                 <div className='left'>
                     <div className="iconBox">
                         <CiHome className='icon' />
@@ -23,17 +23,15 @@ const Headerbottom = () => {
 
                 </div>
                 <div className='left'>
-                    <div className="iconBox">   
+                    <div className="iconBox">
                         <AiOutlineBarChart className='icon' />
                     </div>
                     <p className='leftText'> Report</p>
                 </div>
                 <div className='right'>
-                    <button className='button'> <FaArrowAltCircleUp className='btn-icon'/> Upload</button>
+                    <button className='buttonBottomHeader'> <FaArrowAltCircleUp className='btn-icon' /> <span className='buttonText'>Upload</span></button>
                 </div>
             </div>
-           
-           
         </>
     )
 }
