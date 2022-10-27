@@ -50,6 +50,7 @@ body {
  
 }
 
+
 .left {
   width: auto;
   margin: 10px;
@@ -82,8 +83,7 @@ body {
  background-color: #FFFFFF;
 }
 .button {
-  /* position: absolute; */
-  /* font-size: 10px; */
+
   width: 125px;
   height: 42px;
   background-color: var(--buttoniconbackground-color);
@@ -102,7 +102,7 @@ body {
 
 .btn-icon {
   vertical-align: middle;
-  /* padding: 4px !important; */
+  
   font-size: 25px;
   margin-right: 5px;
 }
@@ -115,8 +115,10 @@ body {
 }
 
 .icon {
-  font-size: 18px !important;
+  font-size: 20px !important;
+  margin-top: 4px !important;
   vertical-align: middle !important;
+  /* top: 20px !important; */
 }
 
 @media screen and (max-width:800px) {
@@ -127,6 +129,8 @@ body {
     position: relative;
 
   }
+
+}
 .profileText {
   font-family: 'DM Sans';
   font-style: normal;

@@ -9,7 +9,7 @@ const App = () => {
     <>
      <Headertop/>
 <Headerbottom />
-     <Sidebar/>
+     {/* <Sidebar/> */}
 
     </>
   )
