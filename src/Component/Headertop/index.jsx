@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,10 +9,8 @@ import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
 import Logo from '../../assets/logo.png';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import MoreIcon from '@mui/icons-material/MoreVert';
@@ -22,15 +20,12 @@ const Search = styled('div')(({ theme }) => ({
     borderRadius: theme.shape.borderRadius,
     color: 'black',
     backgroundColor: 'white',
-    // '&:hover': {
-    //     backgroundColor: alpha(theme.palette.common.white, 0.25),
-    // },
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(14),
     marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-        marginLeft: theme.spacing(3),
-        width: '100%',
+        marginLeft: theme.spacing(6),
+        width: '50%',
     },
 }));
 
@@ -39,10 +34,8 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
     height: '100%',
     position: 'absolute',
     display: 'flex',
-    flexDirection: 'row-reverse',
+    right: '0px',
     alignItems: 'center',
-    justifyContent: 'center',
-    mixBlendMode: 'normal',
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -104,7 +97,6 @@ const Headertop = () => {
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
         </Menu>
     );
-
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
         <Menu
@@ -126,8 +118,7 @@ const Headertop = () => {
                 <IconButton
                     size="small"
                     aria-label="show 17 new notifications"
-                    color="inherit"
-                >
+                    color="inherit">
                     <Badge badgeContent={17} color="error">
                         <NotificationsNoneIcon />
                     </Badge>
@@ -140,16 +131,13 @@ const Headertop = () => {
                     aria-label="account of current user"
                     aria-controls="primary-search-account-menu"
                     aria-haspopup="true"
-                    color="inherit"
-                >
-                    <AccountCircle />
+                    color="inherit">
+                    <AccountCircle/>
                 </IconButton>
                 <p>Ben Paul</p>
             </MenuItem>
         </Menu>
-
     );
-
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
@@ -159,39 +147,29 @@ const Headertop = () => {
                             size="large"
                             edge="start"
                             color="inherit"
-                            aria-label="open drawer"
-                            sx={{ mr: 2 }}
                         >
-                            <img src={Logo} />
-                            {/* <MenuIcon /> */}
+                            <img src={Logo} className='logo' />
                         </IconButton>
                         <Typography
-                            // variant="h6"
                             noWrap
-                            component="div"
                             sx={{ display: { xs: 'none', sm: 'contents' } }}
-
                         >
                             <p className='logoText'> ED Sentiment Analysis App</p>
                             <p className='logotagline'>Powered By Aretec</p>
                         </Typography>
-
                         <Search>
                             <SearchIconWrapper>
                                 <SearchIcon />
                             </SearchIconWrapper>
                             <StyledInputBase
-                                placeholder="Search…"
+                                placeholder="Search Files…"
                                 inputProps={{ 'aria-label': 'search' }}
                             />
-
                         </Search>
-                        <Box sx={{ flexGrow: 1 }} />
+                        <Box />
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-
                             <IconButton
                                 size="small"
-                                aria-label="show 17 new notifications"
                                 color="inherit"
                             >
                                 <Badge color="error">
@@ -210,9 +188,7 @@ const Headertop = () => {
                                 <AccountCircle />
                             </IconButton>
                             <IconButton size="small" color="inherit">
-                                <Badge>
-                                    <span>Ben P</span>
-                                </Badge>
+                                    <span className='profileText'>Ben P</span>
                             </IconButton>
                         </Box>
                         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -235,5 +211,4 @@ const Headertop = () => {
         </>
     )
 }
-
 export default Headertop

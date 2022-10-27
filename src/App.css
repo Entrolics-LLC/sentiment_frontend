@@ -1,35 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 body {
   --buttoniconbackground-color: #225A95;
   --main-background: #12131A;
   --second-background: #191925;
   --text-color: #FFFFFF;
+  /* background-color: var(--main-background); */
+  font-family: 'Inter' !important;
 }
 
 /* HeaderTop */
 .appbar {
   background-color: var(--main-background) !important;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25) !important;
+}
+
+.logo {
+  width: 70%;
+  height: 70%;
 }
 
 .logoText {
-  font-family: 'Inter' !important;
   font-style: normal !important;
   font-weight: 600 !important;
-  font-size: 15px !important;
+  font-size: 18px !important;
   line-height: 30px !important;
   letter-spacing: 0.016em !important;
+  transform: translate(-12px, -12px);
 }
 
 .logotagline {
   position: absolute;
-  left: 75px;
+  left: 95px;
   top: 25px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.016em;
   color: #5494A3;
+}
+
+.profileText {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* sidebar */
+.sideBar {
+  position: absolute;
+  width: 49px;
+  height: 450px;
+  left: 9px;
+  top: 90px;
+  background: #1A1A24;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
