@@ -58,14 +58,14 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 49px;
-  height: 380px;
+  height: 350px;
   left: 9px;
   top: 160px;
   background: #1A1A24;
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
 
-.iconSideBar {
+.iconSideBar{
   color: var(--text-color);
   font-size: 20px;
 }
@@ -75,7 +75,7 @@ body {
   display: flex;
   position: absolute;
   width: 1150px;
-  height: 380px;
+  height: 350px;
   left: 64px;
   top: 160px;
   background: #1A1A24;
@@ -85,7 +85,8 @@ body {
 
 /* Bottom Header */
 .bottom-header {
-  background-color: var(--second-background) !important;
+  background-color: var(--second-background);
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
   flex-wrap: nowrap;
   display: flex;
   padding-left: 24px;
@@ -108,7 +109,7 @@ body {
   background: var(--buttoniconbackground-color);
 }
 
-.icon {
+.iconBox>svg {
   font-size: 20px !important;
   margin-top: 4px !important;
   vertical-align: middle !important;
@@ -125,17 +126,16 @@ body {
 
 .right {
   display: flex;
-  margin-left: 10px;
-  position: absolute;
-  right: 40px;
-  color: var(--text-color);
   align-items: center;
+  margin-top: 7px;
+  overflow: hidden;
+  color: var(--text-color);
 }
 
 .buttonBottomHeader {
   border: none;
   width: 120px;
-  height: 40px;
+  height: 38px;
   background-color: var(--buttoniconbackground-color);
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
   color: var(--text-color);
@@ -159,15 +159,6 @@ body {
   margin-right: 5px;
 }
 
-@media screen and (max-width:800px) {
-
-  .right {
-    position: fixed;
-    /* position: relative; */
-    /* right: -10px; */
-
-  }
-}
 
 /* medium device */
 @media only screen and(min-width: 768px) {
@@ -179,7 +170,7 @@ body {
 /* small device */
 @media screen and (min-width: 600px) {
   .middleSection {
-    width: 90%;
+    width: 88%;
     top: 200px;
   }
 
@@ -192,6 +183,10 @@ body {
 @media screen and (min-width:992px) {
   .middleSection {
     width: 90%;
+  }
+
+  .right {
+    right: 15px;
   }
 }
 
@@ -208,11 +203,11 @@ body {
 
   .middleSection {
     width: 78%;
-    top: 200px;
+    top: 240px;
   }
 
   .sideBar {
-    top: 200px;
+    top: 240px;
   }
 
 }

@@ -20,12 +20,12 @@ const Search = styled('div')(({ theme }) => ({
     borderRadius: theme.shape.borderRadius,
     color: 'black',
     backgroundColor: 'white',
-    marginRight: theme.spacing(14),
+    // marginRight: theme.spacing(13),
     marginLeft: 0,
     width: '100%',
-    [theme.breakpoints.up('xs')]: {
-        marginRight: theme.spacing(2),
-        width:'60%',
+    [theme.breakpoints.up('lg')]: {
+        marginRight: theme.spacing(13),
+        width:'100%'
     },
     [theme.breakpoints.up('sm')]: {
         marginLeft: theme.spacing(6),
