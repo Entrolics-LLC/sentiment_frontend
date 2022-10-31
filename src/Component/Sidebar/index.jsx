@@ -5,25 +5,37 @@ import { FaCalendarAlt } from 'react-icons/fa'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 
+const data = [
+  {
+    icon: <AiOutlineMenu />,
+    link: "/submission"
+  },
+  {
+    icon: <FaFilter />,
+    link: "/responses"
+  },
+  {
+    icon: <FaCalendarAlt />,
+    link: "/dashboard"
+  },
+  {
+    icon: <SearchIcon />,
+    link: "/login"
+  },
+]
+
 const Sidebar = () => {
   return (
     <>
       <div className="sideBar">
-        <div><Link className="iconSideBar" to="/submission">
-          <AiOutlineMenu />
-        </Link>
-        </div>
-        <div ><Link className="iconSideBar" to="/responses">
-          <FaFilter />
-        </Link>
-        </div>
-        <div ><Link className="iconSideBar" to="/dashboard">
-          <FaCalendarAlt />
-        </Link>
-        </div>
-        <div ><Link className="iconSideBar" to="/login">
-          <SearchIcon />
-        </Link></div>
+        {data.map((v) => {
+          return (
+            <div><Link className="iconSideBar" to={v?.link}>
+              {v?.icon}
+            </Link>
+            </div>
+          )
+        })}
       </div>
     </>
   )

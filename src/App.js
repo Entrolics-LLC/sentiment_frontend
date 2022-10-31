@@ -6,6 +6,7 @@ import Dashboard from './Screens/Dashboard'
 import Responses from './Screens/Responses'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Component/Home'
+import Barchart from './Component/Dashboard/Barchart'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/responses' element={<Responses />} />
         </Routes>
       </BrowserRouter>
+      {/* <Barchart/> */}
     </>
   )
 }
