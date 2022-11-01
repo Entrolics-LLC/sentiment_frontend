@@ -3,7 +3,6 @@ import ReactApexChart from 'react-apexcharts'
 
 
 const Barchart = () => {
-
     const [state, setState] = useState({
 
         series: [{
@@ -11,31 +10,33 @@ const Barchart = () => {
         }],
         options: {
             grid: {
-                // show: false,      // you can either change hear to disable all grids
                 xaxis: {
-                  lines: {
-                    show: true,
-                    style: {
-                        color:  'orange',
-                      },
-                   }
-                 },  
+                    lines: {
+                        show: true,
+                    },
+                },
                 yaxis: {
-                  lines: { 
-                    show: false //or just here to disable only y axis
-                   }
-                 },   
-              },
+                    lines: {
+                        show: false
+                    }
+                },
+                padding: {
+                    top: -10,
+                    right: 0,
+                    bottom: 20,
+                    left: 0
+                },
+            },
             title: {
-                text:'Topic',
+                text: 'Topic',
                 align: 'left',
                 offsetX: 10,
                 offsetY: 0,
                 floating: false,
                 style: {
-                  fontSize:  '14px',
-                  fontWeight:  '500',
-                  color:  'white',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    color: 'white',
                 },
             },
             colors: ['#0A69D0', '#C438EF', '#EEF11B', '#F56B3F', '#5494A3'],
@@ -60,6 +61,9 @@ const Barchart = () => {
                 enabled: false
             },
             xaxis: {
+                labels:{
+                    show:false,
+                },
                 categories: ['Shipping and', 'Product', 'Customer Sati..', 'Pricing &.....', 'Website Or.......'
                 ],
             }
@@ -67,12 +71,12 @@ const Barchart = () => {
     })
     return (
         <>
-            <ReactApexChart 
+            <ReactApexChart
                 options={state.options}
                 series={state.series}
                 type="bar"
-                height={180} 
-                className="barChart"/>
+                height={180}
+                className="charts" />
         </>
     )
 }

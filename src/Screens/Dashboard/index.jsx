@@ -3,7 +3,11 @@ import Headerbottom from '../../Component/Bottomheader'
 import Headertop from '../../Component/Headertop'
 import Sidebar from '../../Component/Sidebar'
 import BarChart from '../../Component/Dashboard/Barchart'
-
+import Stackchart from '../../Component/Dashboard/Stackchart'
+import Horizontalbarchart from '../../Component/Dashboard/Horizontalbarchart'
+import WordCloud from '../../Component/Dashboard/Wordcloud/index'
+import Stackchartrowtwo from '../../Component/Dashboard/Stackchartrowtwo'
+import PieChart from '../../Component/Dashboard/PieChart'
 
 const Dashboard = () => {
   return (
@@ -17,24 +21,24 @@ const Dashboard = () => {
         <BarChart/>
         </div>
         <div className='dashboardBox'>
-          hello
+         
         </div>
         <div className='dashboardBox'>
-          hello
+        <Stackchart/>
         </div>
       </div>
       <div className="dasboardRowTwo">
         <div className='dashboardBox'>
-          hello
+          <Horizontalbarchart/>
         </div>
         <div className='smallBox'>
-          hy from small box
+        <Stackchartrowtwo/>
         </div>
         <div className='smallBox'>
-        hy from small box
+        <WordCloud/>
         </div>
         <div className='smallBox'>
-        hy from small box
+        <PieChart/>
         </div>
       </div>
       </div>
