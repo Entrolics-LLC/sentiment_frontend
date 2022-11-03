@@ -49,7 +49,6 @@ const Headerbottom = () => {
                     </Grid>
                 </Box>
             </div>
-
         </>
     )
 }

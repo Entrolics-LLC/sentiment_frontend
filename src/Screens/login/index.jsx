@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from '../../Component/Home'
 
+
 const Login = () => {
   return (
     <>
