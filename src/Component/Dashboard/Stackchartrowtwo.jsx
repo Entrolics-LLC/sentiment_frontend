@@ -19,6 +19,9 @@ const Stackchartrowtwo = () => {
         ],
         options: {
             xaxis: {
+                axisTicks: {
+                    show: false,
+                },
                 labels: {
                     style: {
                         colors: '#FFFFFFB0'
@@ -55,7 +58,7 @@ const Stackchartrowtwo = () => {
                 stacked: true,
                 toolbar: {
                     tools: {
-                        download: '<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png" class="iconDownload" width="20">'
+                        download: '<span class="chartIcon">...</span>'
                     },
                     show: true
                 },

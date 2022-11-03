@@ -8,39 +8,37 @@ import Horizontalbarchart from '../../Component/Dashboard/Horizontalbarchart'
 import WordCloud from '../../Component/Dashboard/Wordcloud/index'
 import Stackchartrowtwo from '../../Component/Dashboard/Stackchartrowtwo'
 import PieChart from '../../Component/Dashboard/PieChart'
+import Rangechart from '../../Component/Dashboard/Rangechart'
 
+const firstRow = [<BarChart />, <Rangechart />, <Stackchart />]
+const secondRow = [<Stackchartrowtwo />, <WordCloud />, <PieChart />]
 const Dashboard = () => {
   return (
     <>
       <Headertop />
       <Headerbottom />
-      <Sidebar/>
+      <Sidebar />
       <div className="dashboard">
-      <div className="dasboardRowOne">
-        <div className='dashboardBox'>
-        <BarChart/>
+        <div className="dasboardRowOne">
+          {firstRow?.map((charts) => {
+            return (<div className='dashboardBox'>
+              {charts}
+            </div>
+            )
+          })}
         </div>
-        <div className='dashboardBox'>
-         
+        <div className="dasboardRowTwo">
+          <div className='dashboardBox'>
+            <Horizontalbarchart />
+          </div>
+          {secondRow?.map((smallCharts) => {
+            return (
+              <div className='smallBox'>
+                {smallCharts}
+              </div>
+            )
+          })}
         </div>
-        <div className='dashboardBox'>
-        <Stackchart/>
-        </div>
-      </div>
-      <div className="dasboardRowTwo">
-        <div className='dashboardBox'>
-          <Horizontalbarchart/>
-        </div>
-        <div className='smallBox'>
-        <Stackchartrowtwo/>
-        </div>
-        <div className='smallBox'>
-        <WordCloud/>
-        </div>
-        <div className='smallBox'>
-        <PieChart/>
-        </div>
-      </div>
       </div>
     </>
   )

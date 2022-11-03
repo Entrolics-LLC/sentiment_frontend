@@ -27,7 +27,7 @@ const PieChart = () => {
                 toolbar: {
                     show:true,
                     tools: {
-                        download: `<MoreHorizIcon className='chartIcon'/>`
+                        download: '<span class="chartIcon">...</span>'
                     }
                 }
             },

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import ReactApexChart from 'react-apexcharts'
 
-const Stackchart = () => {
-    const [state, setState] = useState({
+const Rangechart = () => {
+    const [state, Setstate] = useState({
         series: [{
             name: 'PRODUCT A',
             data: [44, 55, 41, 67, 22, 43]
@@ -11,37 +11,40 @@ const Stackchart = () => {
             data: [13, 23, 20, 8, 13, 27]
         }, {
             name: 'PRODUCT C',
-            data: [11, 17, 15, 15, 21, 14]
-        }, {
-            name: 'PRODUCT D',
-            data: [21, 7, 25, 13, 22, 8]
-        }, {
-            name: 'PRODUCT E',
-            data: [21, 7, 25, 13, 22, 8]
-        }],
+            data: [40, 20, 30, 20, 21, 20]
+        },],
         options: {
+            legend: {
+                show: true,
+                markers: {
+                  fillColors: ['#00E396', '#775DD0']
+                }
+              },
+            stroke: {
+                curve: 'straight'  
+            },
             xaxis: {
                 axisTicks: {
                     show: false,
                 },
-                labels:{
-                    style:{
-                        colors:'#FFFFFFB0'
+                labels: {
+                    style: {
+                        colors: '#FFFFFFB0'
                     }
                 },
             },
             yaxis: {
-                labels:{
-                    style:{
-                        colors:'#FFFFFFB0',
+                labels: {
+                    style: {
+                        colors: '#FFFFFFB0'
                     }
                 },
             },
             dataLabels: {
                 enabled: false
-             },
+            },
             title: {
-                text: 'Topics over Time',
+                text: 'Sentiment over Time',
                 align: 'left',
                 offsetX: 10,
                 offsetY: 0,
@@ -52,7 +55,7 @@ const Stackchart = () => {
                     color: 'white',
                 },
             },
-            colors: ['#0A69D0', '#5B5A99', '#F9440B', '#EC913D', '#37BF96'],
+            colors: ['#37BF96', '#EA9635', '#FFB6C1'],
             chart: {
                 type: 'bar',
                 height: 350,
@@ -75,7 +78,6 @@ const Stackchart = () => {
                         offsetX: -10,
                         offsetY: 0
                     },
-                    
                 }
             }],
             plotOptions: {
@@ -84,25 +86,22 @@ const Stackchart = () => {
                     barHeight: "50%",
                     horizontal: false,
                 },
-            },
-
+            }, 
             fill: {
                 opacity: 1
             }
         },
-
-    }
-    )
+    });
     return (
         <>
             <ReactApexChart
                 options={state.options}
                 series={state.series}
-                type="bar"
+                type="area"
                 height={180}
                 className="charts" />
         </>
     )
 }
 
-export default Stackchart
+export default Rangechart

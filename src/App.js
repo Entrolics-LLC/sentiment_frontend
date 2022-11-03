@@ -6,22 +6,21 @@ import Dashboard from './Screens/Dashboard'
 import Responses from './Screens/Responses'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Component/Home'
-import Barchart from './Component/Dashboard/Barchart'
-
+import Createsubmissionstep2 from './Component/Submission/Createsubmissionstep2'
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home />} />
           <Route path='/submission' element={<Submission />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/responses' element={<Responses />} />
         </Routes>
-      </BrowserRouter>
-      {/* <Barchart/> */}
+      </BrowserRouter> */}
+      <Createsubmissionstep2/>
     </>
   )
 }

@@ -78,10 +78,23 @@ const Horizontalbarchart = () => {
                 colors: ['#fff']
             },
             xaxis: {
+                axisTicks: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false
+                  },
                 labels: {
                     show: false,
                 },
                 categories: ['Customer Sati...', 'Shipping and....', 'Product Fe....', 'Pricing &.....', 'Website Or...'],
+            },
+            yaxis: {
+                labels:{
+                    style:{
+                        colors:'#FFFFFFB0',
+                    }
+                },
             },
             tooltip: {
                 y: {

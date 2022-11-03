@@ -4,7 +4,6 @@ import ReactApexChart from 'react-apexcharts'
 
 const Barchart = () => {
     const [state, setState] = useState({
-
         series: [{
             data: [470, 350, 250, 200, 100]
         }],
@@ -45,7 +44,7 @@ const Barchart = () => {
                 height: 350,
                 toolbar: {
                     tools: {
-                        download: '<img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/more-512.png" class="iconDownload" width="20">'
+                        download: '<span class="chartIcon">...</span>'
                     }
                 }
             },
@@ -61,12 +60,26 @@ const Barchart = () => {
                 enabled: false
             },
             xaxis: {
-                labels:{
-                    show:false,
+                axisTicks: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false
+                  },
+                labels: {
+                    show: false,
                 },
                 categories: ['Shipping and', 'Product', 'Customer Sati..', 'Pricing &.....', 'Website Or.......'
                 ],
-            }
+            },
+            yaxis: {
+                labels:{
+                    style:{
+                        colors:'#FFFFFFB0',
+                    }
+                },
+            },
+            
         },
     })
     return (

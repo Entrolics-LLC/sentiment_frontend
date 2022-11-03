@@ -6,7 +6,7 @@ body {
   --main-background: #12131A;
   --second-background: #191925;
   --text-color: #FFFFFF;
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
   font-family: 'Inter' !important;
 }
 
@@ -64,7 +64,8 @@ body {
   background: #1A1A24;
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
-.iconSideBar{
+
+.iconSideBar {
   color: var(--text-color);
   font-size: 20px;
 }
@@ -159,26 +160,27 @@ body {
 }
 
 /* dasboard */
-.dashboard{
+.dashboard {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 1180px;
-  height: 350px;
+  width: 92%;
+  height: auto;
   left: 64px;
   top: 150px;
-  /* background: #1A1A24; */
-  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
 }
-.dasboardRowOne{
-  display: flex;
-  flex-wrap: nowrap;
-}
-.dasboardRowTwo{
+
+.dasboardRowOne {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.dashboardBox{
+.dasboardRowTwo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dashboardBox {
   background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
   border: 1px solid rgba(80, 140, 155, 0.3);
   box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
@@ -191,7 +193,8 @@ body {
   text-align: center;
   align-items: center;
 }
-.smallBox{
+
+.smallBox {
   background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
   border: 1px solid rgba(80, 140, 155, 0.3);
   box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
@@ -204,32 +207,56 @@ body {
   text-align: center;
   align-items: center;
 }
+
 /* Dashboard chart */
-.charts{
+.charts {
   margin-top: 22px;
-  width:350px;
+  width: 350px;
 }
-.chartIcon{
+
+.chartIcon {
   font-size: 35px;
   font-weight: 600;
   color: var(--text-color);
 }
-.apexcharts-legend-text{
+
+.apexcharts-legend-text {
   display: none !important;
 }
-.apexcharts-legend-marker{
+
+.apexcharts-legend-marker {
   display: none !important;
 }
+
+/* CreateSubmission step 2 */
+.steps-content {
+  min-height: 400px;
+  text-align: center;
+  background-color: orange;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+
 /* medium device */
 @media only screen and(min-width: 768px) {
-  .middleSection {
+
+  .middleSection,
+  .dashboard {
     width: 80%;
+  }
+
+  .dashboard {
+    width: 60%;
   }
 }
 
 /* small device */
 @media screen and (min-width: 600px) {
-  .middleSection {
+
+  .middleSection,
+  .dashboard {
     width: 88%;
     top: 200px;
   }
@@ -241,14 +268,17 @@ body {
 
 /* large devices */
 @media screen and (min-width:992px) {
-  .middleSection {
+
+  .middleSection,
+  .dashboard {
     width: 90%;
-    top:160px;
+    top: 160px;
   }
 
   .right {
     right: 15px;
   }
+
   .sideBar {
     top: 160px;
   }
@@ -265,7 +295,12 @@ body {
     right: -10px;
   }
 
-  .middleSection {
+  .dashboardBox {
+    width: 300px;
+  }
+
+  .middleSection,
+  .dashboard {
     width: 78%;
     top: 240px;
   }
@@ -274,4 +309,18 @@ body {
     top: 240px;
   }
 
+}
+
+@media only screen and (max-width: 1100px) {
+  .dasboardRowOne {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dasboardRowTwo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
