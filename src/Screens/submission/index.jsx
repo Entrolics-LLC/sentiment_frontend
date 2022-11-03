@@ -380,7 +380,7 @@ const Submission = (props) => {
             <TablePagination labelRowsPerPage="Per Page" className='pag'
               rowsPerPageOptions={[5, 10, 25]}
               component="div"
-              count={rows.length}
+              count={1}
               rowsPerPage={rowsPerPage}
               page={page}
               onRowsPerPageChange={handleChangeRowsPerPage}
