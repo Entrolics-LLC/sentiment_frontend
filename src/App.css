@@ -5,8 +5,9 @@ body {
   --buttoniconbackground-color: #225A95;
   --main-background: #12131A;
   --second-background: #191925;
+  --table-header-background: #313131;
   --text-color: #FFFFFF;
-  background-color: var(--main-background);
+  background-color: var(--main-background) !important;
   font-family: 'Inter' !important;
 }
 
@@ -58,14 +59,14 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 49px;
-  height: 350px;
+  height: 420px;
   left: 9px;
   top: 160px;
   background: #1A1A24;
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
 
-.iconSideBar{
+.iconSideBar {
   color: var(--text-color);
   font-size: 20px;
 }
@@ -75,12 +76,18 @@ body {
   display: flex;
   position: absolute;
   width: 1150px;
-  height: 350px;
+  height: 420px;
   left: 64px;
   top: 170px !important;
   background: #1A1A24;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+
+.table {
+  width: 1200px;
+  height: 400px;
+  background-color: #225A95;
 }
 
 /* Bottom Header */
@@ -89,7 +96,7 @@ body {
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
   flex-wrap: nowrap;
   display: flex;
-  padding-left: 30px ;
+  padding-left: 30px;
   padding-right: 30px !important;
 }
 
@@ -160,8 +167,20 @@ body {
   font-size: 25px;
   margin-right: 5px;
 }
-
-
+/* --------------------------------Modal------------------------------ */
+/* CreateSubmissionstep1 */
+.ant-modal-footer{
+  display: none !important;
+}
+.ant-modal-content{
+  background-color: var(--second-background) !important;
+}
+.stepColor{
+  color: var(--text-color) !important;
+}
+.ant-form-item-label >label{
+  color: var(--text-color) !important;
+}
 /* medium device */
 @media only screen and(min-width: 768px) {
   .middleSection {
@@ -212,3 +231,97 @@ body {
     top: 240px;
   }
 }
+
+/* ----------------Submission---------------- */
+th {
+  border-bottom: none !important;
+}
+
+td {
+  border-bottom: none !important;
+}
+
+.tableMain {
+  background: #1A1A24 !important;
+
+}
+
+.sub-button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  background-color: var(--buttoniconbackground-color);
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.boxTable {}
+
+.tableHead {
+  background-color: var(--table-header-background);
+
+}
+
+.tableRow {
+  color: var(--text-color) !important;
+  text-align: left !important;
+
+}
+
+.tableCont {
+  height: 45vh;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.tableCell {
+  color: var(--text-color);
+
+}
+
+#tableTitle {
+  color: var(--text-color);
+}
+
+.pag {
+  color: var(--text-color) !important;
+}
+
+.nameColumn {
+  color: var(--buttoniconbackground-color) !important;
+  width: 11% !important;
+}
+
+.data {
+  color: var(--text-color) !important;
+}
+
+.dataDescription {
+  color: var(--text-color) !important;
+  width: 26% !important;
+}
+
+.checkboxData {
+  color: var(--text-color) !important;
+
+}
+
+.checkboxHead {
+  color: var(--text-color) !important;
+}
+
+
+
+/* ****   PAGINATION ***** */
+
+
+.MuiPagination-root>button {
+  color: red !important;
+}
+
+
+/* ********* */
