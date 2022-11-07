@@ -17,7 +17,7 @@ import Paper from '@mui/material/Paper';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import { visuallyHidden } from '@mui/utils';
-import SubModal from '../../Component/Submission/SubModal'
+import Modalsteps from '../../Component/Submission/Modalsteps';
 
 function createData(name, submissionid, description, date, status, completiondate, uploadedby) {
   return {
@@ -213,13 +213,7 @@ function EnhancedTableToolbar(props) {
 
       )}
 
-      <SubModal />
-      {/* <IconButton>
-        
-        <button className='sub-button'>Create Submission</button>
-
-      </IconButton> */}
-
+      <Modalsteps />
     </Toolbar>
   );
 }
@@ -375,9 +369,12 @@ const Submission = (props) => {
               )} */}
                 </TableBody>
               </Table>
+              
             </TableContainer>
+          
             {/* <button>click</button> */}
             <TablePagination labelRowsPerPage="Per Page" className='pag'
+            
               rowsPerPageOptions={[5, 10, 25]}
               component="div"
               count={1}
@@ -385,7 +382,6 @@ const Submission = (props) => {
               page={page}
               onRowsPerPageChange={handleChangeRowsPerPage}
             />
-
           </Paper>
 
         </Box>

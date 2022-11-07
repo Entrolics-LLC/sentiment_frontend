@@ -7,7 +7,7 @@ body {
   --second-background: #191925;
   --table-header-background: #313131;
   --text-color: #FFFFFF;
-  background-color: var(--main-background) !important;
+  /* background-color: var(--main-background) !important; */
   font-family: 'Inter' !important;
 }
 
@@ -59,9 +59,9 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 49px;
-  height: 420px;
+  height: 400px;
   left: 9px;
-  top: 160px;
+  top: 170px;
   background: #1A1A24;
   box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
 }
@@ -76,7 +76,7 @@ body {
   display: flex;
   position: absolute;
   width: 1150px;
-  height: 420px;
+  height: 400px;
   left: 64px;
   top: 170px !important;
   background: #1A1A24;
@@ -167,84 +167,74 @@ body {
   font-size: 25px;
   margin-right: 5px;
 }
-/* --------------------------------Modal------------------------------ */
-/* CreateSubmissionstep1 */
-.ant-modal-footer{
+
+/* dasboard */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 92%;
+  height: auto;
+  left: 64px;
+  top: 150px;
+}
+
+.dasboardRowOne {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dasboardRowTwo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dashboardBox {
+  background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
+  border: 1px solid rgba(80, 140, 155, 0.3);
+  box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
+  backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  display: flex;
+  width: 370px;
+  height: 180px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.smallBox {
+  background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
+  border: 1px solid rgba(80, 140, 155, 0.3);
+  box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
+  backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  display: flex;
+  width: 240px;
+  height: 180px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Dashboard chart */
+.charts {
+  margin-top: 22px;
+  width: 350px;
+}
+
+.chartIcon {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.apexcharts-legend-text {
   display: none !important;
 }
-.ant-modal-content{
-  background-color: var(--second-background) !important;
-}
-.stepColor{
-  color: var(--text-color) !important;
-}
-.ant-form-item-label >label{
-  color: var(--text-color) !important;
-}
-.ant-select:not(.ant-select-customize-input) .ant-select-selector{
-  background-color: transparent !important;
-}
-.ant-picker{
-background: transparent !important;
-}
-.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input{
-  border: 2px solid var(--text-color) !important;
-}
-.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
-  color: var(--text-color) !important;
-}
-/* .css-i4bv87-MuiSvgIcon-root{
+
+.apexcharts-legend-marker {
   display: none !important;
-} */
-/* medium device */
-@media only screen and(min-width: 768px) {
-  .middleSection {
-    width: 80%;
-  }
-}
-
-/* small device */
-@media screen and (min-width: 600px) {
-  .middleSection {
-    width: 88%;
-    top: 200px;
-  }
-
-  .sideBar {
-    top: 170px;
-  }
-}
-
-/* large devices */
-@media screen and (min-width:992px) {
-  .middleSection {
-    width: 90%;
-  }
-
-  .right {
-    right: 15px;
-  }
-}
-
-/* extra small devices */
-@media screen and (max-width:600px) {
-  .bottom-header {
-    flex-wrap: wrap;
-  }
-
-  .right {
-    position: relative;
-    right: -10px;
-  }
-
-  .middleSection {
-    width: 78%;
-    top: 240px;
-  }
-
-  .sideBar {
-    top: 240px;
-  }
 }
 
 /* ----------------Submission---------------- */
@@ -261,32 +251,32 @@ td {
 
 }
 
-.sub-button {
-  border: none;
-  width: 150px;
-  height: 40px;
-  background-color: var(--buttoniconbackground-color);
-  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
-  color: var(--text-color);
-  border-radius: 5px;
+.createButton {
+  border: none !important;
+  width: 150px !important;
+  height: 40px !important;
+  background-color: var(--buttoniconbackground-color) !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: var(--text-color) !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
 }
-
-.boxTable {}
 
 .tableHead {
   background-color: var(--table-header-background);
-
 }
 
 .tableRow {
   color: var(--text-color) !important;
   text-align: left !important;
-
 }
 
 .tableCont {
-  height: 45vh;
-
+  height: 42vh;
 }
 
 ::-webkit-scrollbar {
@@ -328,15 +318,190 @@ td {
 .checkboxHead {
   color: var(--text-color) !important;
 }
-
-
-
-/* ****   PAGINATION ***** */
-
-
-.MuiPagination-root>button {
-  color: red !important;
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select{
+ border: 1px solid white;
 }
 
+/* --------------------------------Modal------------------------------ */
+.modalSubmission{
+  width: 900px !important;
+  margin-top: -100px !important;
+}
+.stepsAction{
+  display: flex !important;
+  justify-content: center !important;
+}
+/* CreateSubmissionstep1 */
+.ant-modal-footer {
+  display: none !important;
+}
 
-/* ********* */
+.ant-modal-content {
+  background-color: var(--second-background) !important;
+  color: var(--text-color) !important;
+}
+
+.stepColor {
+  color: var(--text-color) !important;
+}
+
+.ant-steps-item-title {
+  color: var(--text-color) !important;
+}
+
+.ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent !important;
+}
+
+.ant-modal-close-x {
+  color: var(--text-color) !important;
+}
+
+.ant-picker {
+  background: transparent !important;
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+  background-color: var(--buttoniconbackground-color) !important;
+  border: var(--buttoniconbackground-color) !important;
+}
+
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+.anticon-check {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.line {
+  color: var(--text-color) !important;
+  background-color: var(--text-color) !important;
+}
+
+.modalButton {
+  border: none !important;
+  width: 100px !important;
+  height: 40px !important;
+  background-color: var(--buttoniconbackground-color) !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: var(--text-color) !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
+}
+
+.backButton {
+  border: none !important;
+  width: 100px !important;
+  height: 40px !important;
+  background-color: #E9E9E9 !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: black !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
+  margin: 0 8px !important;
+}
+
+/* CreateSubmission step 2 */
+.steps-content {
+  min-height: 300px;
+}
+
+/* medium device */
+@media only screen and(min-width: 768px) {
+
+  .middleSection,
+  .dashboard {
+    width: 80%;
+  }
+
+  .dashboard {
+    width: 60%;
+  }
+}
+
+/* small device */
+@media screen and (min-width: 600px) {
+
+  .middleSection,
+  .dashboard {
+    width: 88%;
+    top: 200px;
+  }
+
+  .sideBar {
+    top: 170px;
+  }
+}
+
+/* large devices */
+@media screen and (min-width:992px) {
+
+  .middleSection,
+  .dashboard {
+    width: 90%;
+    top: 160px;
+  }
+
+  .right {
+    right: 15px;
+  }
+
+  .sideBar {
+    top: 160px;
+  }
+}
+
+/* extra small devices */
+@media screen and (max-width:600px) {
+  .bottom-header {
+    flex-wrap: wrap;
+  }
+
+  .right {
+    position: relative;
+    right: -10px;
+  }
+
+  .dashboardBox {
+    width: 300px;
+  }
+
+  .middleSection,
+  .dashboard {
+    width: 78%;
+    top: 240px;
+  }
+
+  .sideBar {
+    top: 240px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .dasboardRowOne {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dasboardRowTwo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

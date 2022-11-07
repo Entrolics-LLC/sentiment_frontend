@@ -7,7 +7,7 @@ import Dashboard from './Screens/Dashboard'
 import Responses from './Screens/Responses'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Component/Home'
-import Createsubmissionstep1 from './Component/Submission/Createsubmissionstep1'
+import Modalsteps from './Component/Submission/Modalsteps'
 
 
 const App = () => {
@@ -15,14 +15,14 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home />} />
           <Route path='/submission' element={<Submission />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/responses' element={<Responses />} />
         </Routes>
       </BrowserRouter>
-      {/* <Createsubmissionstep1/> */}
+      {/* <Modalsteps/> */}
     </>
   )
 }
