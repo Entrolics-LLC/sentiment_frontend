@@ -7,7 +7,7 @@ body {
   --second-background: #191925;
   --table-header-background: #313131;
   --text-color: #FFFFFF;
-  /* background-color: var(--main-background) !important; */
+  background-color: var(--main-background) !important;
   font-family: 'Inter' !important;
 }
 
@@ -320,15 +320,16 @@ td {
 }
 
 /* --------------------------------Modal------------------------------ */
-.modalSubmission{
+.modalSubmission {
   width: 900px !important;
-  margin-top: -100px !important;
+  margin-top: -65px !important;
 }
-.stepsAction{
+
+.stepsAction {
   display: flex !important;
   justify-content: center !important;
 }
-/* CreateSubmissionstep1 */
+
 .ant-modal-footer {
   display: none !important;
 }
@@ -346,22 +347,12 @@ td {
   color: var(--text-color) !important;
 }
 
-.ant-form-item-label>label {
-  display: flex !important;
-  justify-content: flex-start !important;
-  color: var(--text-color) !important;
-}
-
-.ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background-color: transparent !important;
-}
-
 .ant-modal-close-x {
   color: var(--text-color) !important;
 }
 
-.ant-picker {
-  background: transparent !important;
+.anticon-check {
+  color: var(--buttoniconbackground-color) !important;
 }
 
 .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
@@ -373,8 +364,31 @@ td {
   background-color: var(--buttoniconbackground-color) !important;
 }
 
-.anticon-check {
-  color: var(--buttoniconbackground-color) !important;
+/* CreateSubmissionstep1 */
+.submissionStepOne .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent !important;
+}
+
+.submissionStepOne .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-picker {
+  background: transparent !important;
+}
+
+.submissionStepOne .ant-select-arrow {
+  color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-form-item {
+  margin-bottom: 10px !important;
 }
 
 .line {
@@ -418,6 +432,232 @@ td {
   min-height: 300px;
 }
 
+.submissionStepTwo .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.submissionStepTwo .ant-form-item-label>label::after {
+  display: none !important;
+}
+
+.submissionStepTwo .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+.submissionStepTwo .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: var(--buttoniconbackground-color);
+}
+
+.submissionStepTwo .css-jsexje-MuiSwitch-thumb {
+  background-color: var(--text-color);
+}
+
+/* Responses Modal Heading*/
+[data-theme='compact'] .siteNavigationSteps,
+.siteNavigationSteps {
+  margin-bottom: 100px;
+  box-shadow: 0px -1px 0 0 #e8e8e8 inset;
+}
+
+.siteNavigationSteps .ant-steps-item-icon {
+  display: none;
+}
+
+.siteNavigationSteps .ant-steps-item::before {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+.siteNavigationSteps .ant-steps-item::after {
+  display: none !important;
+}
+
+.siteNavigationSteps .ant-steps-item-title {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Response Modal Properties */
+.responseModalProperties .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.responseModalProperties .ant-input {
+  background: none !important;
+}
+
+.responseModalProperties .ant-input:hover {
+  border-color: var(--text-color) !important;
+}
+
+.responseModalProperties .ant-form-item-label>label::after {
+  display: none !important;
+}
+
+.responseModalProperties .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+.responseModalProperties .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent !important;
+}
+
+.responseModalProperties .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: var(--text-color) !important;
+}
+
+.propertiesButton {
+  position: absolute;
+  color: var(--text-color) !important;
+  width: 120px !important;
+  height: 42px !important;
+  border: 2px solid #FFFFFF !important;
+  filter: drop-shadow(8px 4px 24px rgba(0, 0, 0, 0.03)) !important;
+  border-radius: 5px !important;
+  background-color: transparent !important;
+}
+
+.modalPropertiesButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.update {
+  margin-right: 100px;
+}
+
+.responseUpdateModal {
+  width: 600px !important;
+}
+
+.responseConfirmModal {
+  width: 300px !important;
+}
+
+.modalTextArea {
+  height: 120px !important;
+  resize: none !important;
+  border-radius: 10px !important;
+}
+
+.responseModalText {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 29px;
+}
+
+.stepsContent {
+  margin-top: 20px;
+  min-height: 400px;
+}
+
+/* Modal progress bar */
+.progressbar {
+  display: flex !important;
+  margin-bottom: 20px;
+}
+
+.ant-progress-success-bg,
+.ant-progress-bg {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+.ant-progress-text {
+  color: var(--text-color) !important;
+}
+
+.buttonprogressbarminus {
+  margin-right: 10px !important;
+}
+
+.buttonprogressbarplus {
+  margin-left: 10px !important;
+}
+
+.anticon-minus {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.anticon-plus {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.progressbar .ant-btn-icon-only {
+  height: 20px;
+}
+
+/* responseModalSentences */
+.responseModalSentences .ant-table-container {
+  background-color: var(--second-background) !important;
+}
+
+.responseModalSentences .ant-table-thead>tr>th {
+  background: transparent;
+  color: var(--text-color) !important;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.responseModalSentences .ant-table-tbody > tr > td{
+  color: var(--text-color) !important;
+  text-align: justify;
+  padding: 2px 16px;
+}
+
+.responseModalSentences .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: transparent !important;
+}
+
+.responseModalSentences .ant-pagination {
+  display: none;
+}
+
+/* responseModalParagraph */
+.responseModalParagraph .ant-table-container {
+  background-color: var(--second-background) !important;
+}
+
+.responseModalParagraph .ant-table-thead>tr>th {
+display: none;
+}
+.responseModalParagraph .ant-table-tbody > tr > td{
+  color: var(--text-color) !important;
+  text-align: justify;
+  padding: 2px 16px;
+}
+
+.responseModalParagraph .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: transparent !important;
+}
+
+.responseModalParagraph .ant-pagination {
+  display: none;
+}
+/* responseSimilarDocuments */
+.responseSimilarDocuments{
+  display: flex;
+}
+.responseSimilarDocumentLeft{
+  width: 80%;
+}
+.responseSimilarDocumentRight{
+  width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.similarDocumentCards {
+  padding: 5px;
+}
 /* medium device */
 @media only screen and(min-width: 768px) {
 

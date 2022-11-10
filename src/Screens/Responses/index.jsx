@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '../../Component/Home'
+import Responsemodalstep from '../../Component/Responses/Responsemodalstep'
 
 
 const Responses = () => {
@@ -7,7 +8,7 @@ const Responses = () => {
     <>
     <Home/>
     <div className="middleSection">
-    <h1 style={{color:'white'}}>Responses</h1>
+    <Responsemodalstep/>
     </div>
     </>
   )

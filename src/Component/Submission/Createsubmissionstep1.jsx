@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Cascader, DatePicker, Form, Input, InputNumber, Radio, Select, Switch, TreeSelect } from 'antd';
+import { Form, Input, Select} from 'antd';
 import 'antd/dist/antd.css';
 
 const Createsubmissionstep1 = () => {
@@ -9,13 +9,13 @@ const Createsubmissionstep1 = () => {
     };
     return (
         <>
-            <div>
+            <div className='submissionStepOne'>
                 <Form
                     labelCol={{
-                        span: 4,
+                        span: 6,
                     }}
                     wrapperCol={{
-                        span: 14,
+                        span: 10,
                     }}
                     layout="horizontal"
                     initialValues={{
