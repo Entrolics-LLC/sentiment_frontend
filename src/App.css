@@ -605,7 +605,8 @@ td {
   font-size: 15px;
   border-bottom: 1px solid #f0f0f0;
 }
-.responseModalSentences .ant-table-tbody > tr > td{
+
+.responseModalSentences .ant-table-tbody>tr>td {
   color: var(--text-color) !important;
   text-align: justify;
   padding: 2px 16px;
@@ -626,9 +627,10 @@ td {
 }
 
 .responseModalParagraph .ant-table-thead>tr>th {
-display: none;
+  display: none;
 }
-.responseModalParagraph .ant-table-tbody > tr > td{
+
+.responseModalParagraph .ant-table-tbody>tr>td {
   color: var(--text-color) !important;
   text-align: justify;
   padding: 2px 16px;
@@ -642,21 +644,89 @@ display: none;
 .responseModalParagraph .ant-pagination {
   display: none;
 }
+
 /* responseSimilarDocuments */
-.responseSimilarDocuments{
+.responseSimilarDocuments {
   display: flex;
 }
-.responseSimilarDocumentLeft{
+
+.responseSimilarDocumentLeft {
   width: 80%;
 }
-.responseSimilarDocumentRight{
+
+.responseSimilarDocumentRight {
   width: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .similarDocumentCards {
   padding: 5px;
+}
+
+.similarDocumentCards .ant-card {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.similarDocumentCards .ant-card-body {
+  font-weight: 300;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.similarDocumentCards .ant-card-bordered {
+  border: 1px solid #5494A3;
+}
+
+.similarDocumentCards .ant-card-head {
+  text-align: center;
+  padding: 0;
+  margin-bottom: -3px;
+  min-height: 0px;
+}
+
+.similarDocumentCards .ant-card-head-title {
+  color: var(--text-color);
+  padding: 10px 0 0 0;
+  font-weight: 600;
+}
+.similarDocumentCards .ant-checkbox-inner {
+background: transparent;
+border-radius: 0px;
+}
+.similarDocumentCards .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner{
+  border-color: var(--text-color);
+  }
+  .similarDocumentCards .ant-checkbox-checked .ant-checkbox-inner{
+    background: transparent;
+    border-color: var(--text-color);
+  }
+.responseCheckBox {
+  margin-right: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  color: #11B755
+}
+.responsePagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.responsePagination .ant-pagination-item{
+  background-color: #D9D9D9;
+}
+.responsePagination .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  background-color: #D9D9D9;
+}
+.responsePagination .ant-pagination-prev .ant-pagination-item-link{
+  background-color: #D9D9D9;
+}
+.responsePagination .ant-pagination-next .ant-pagination-item-link{
+  background-color: #D9D9D9;
 }
 /* medium device */
 @media only screen and(min-width: 768px) {
