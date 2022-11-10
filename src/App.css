@@ -1,7 +1,744 @@
-body{
-  --buttoniconbackground-color:#225A95;
-  --main-background:#12131A;
-  --second-background:#191925;
-  --text-color:#FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+  --buttoniconbackground-color: #225A95;
+  --main-background: #12131A;
+  --second-background: #191925;
+  --table-header-background: #313131;
+  --text-color: #FFFFFF;
+  background-color: var(--main-background) !important;
+  font-family: 'Inter' !important;
 }
 
+/* HeaderTop */
+.appbar {
+  background-color: var(--main-background) !important;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25) !important;
+}
+
+.logo {
+  width: 70%;
+  height: 70%;
+}
+
+.logoText {
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  letter-spacing: 0.016em !important;
+  transform: translate(-12px, -12px);
+}
+
+.logotagline {
+  position: absolute;
+  left: 95px;
+  top: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.016em;
+  color: #5494A3;
+}
+
+.profileText {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* sidebar */
+.sideBar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 49px;
+  height: 350px;
+  left: 9px;
+  top: 170px;
+  background: #1A1A24;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
+}
+
+.iconSideBar {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/* Middle section */
+.middleSection {
+  display: flex;
+  position: absolute;
+  width: 1150px;
+  height: 350px;
+  left: 64px;
+  top: 170px !important;
+  background: #1A1A24;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.table {
+  width: 1200px;
+  height: 400px;
+  background-color: #225A95;
+}
+
+/* Bottom Header */
+.bottom-header {
+  background-color: var(--second-background);
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
+  flex-wrap: nowrap;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px !important;
+}
+
+
+.left {
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.iconBox {
+  width: 31px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--buttoniconbackground-color);
+}
+
+.iconBox>svg {
+  font-size: 20px !important;
+  margin-top: 4px !important;
+  vertical-align: middle !important;
+}
+
+.leftText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 5px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.buttonBottomHeader {
+  border: none;
+  width: 120px;
+  height: 38px;
+  background-color: var(--buttoniconbackground-color);
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03);
+  color: var(--text-color);
+  border-radius: 5px;
+  margin: 7px;
+}
+
+.buttonText {
+  vertical-align: middle;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.016em;
+  margin-right: 2px;
+}
+
+.btn-icon {
+  vertical-align: middle;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+/* dasboard */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 92%;
+  height: auto;
+  left: 64px;
+  top: 150px;
+}
+
+.dasboardRowOne {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dasboardRowTwo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dashboardBox {
+  background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
+  border: 1px solid rgba(80, 140, 155, 0.3);
+  box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
+  backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  display: flex;
+  width: 370px;
+  height: 180px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.smallBox {
+  background: linear-gradient(241.25deg, rgba(28, 28, 37, 0.8) 4.4%, rgba(28, 28, 37, 0.488) 61.77%, rgba(28, 28, 37, 0.32) 119.94%);
+  border: 1px solid rgba(80, 140, 155, 0.3);
+  box-shadow: 0px 51px 69px rgba(23, 18, 43, 0.585739);
+  backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  display: flex;
+  width: 240px;
+  height: 180px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Dashboard chart */
+.charts {
+  margin-top: 22px;
+  width: 350px;
+}
+
+.chartIcon {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.apexcharts-legend-text {
+  display: none !important;
+}
+
+.apexcharts-legend-marker {
+  display: none !important;
+}
+
+/* ----------------Submission---------------- */
+th {
+  border-bottom: none !important;
+}
+
+td {
+  border-bottom: none !important;
+}
+
+.tableMain {
+  background: #1A1A24 !important;
+
+}
+
+.createButton {
+  border: none !important;
+  width: 150px !important;
+  height: 40px !important;
+  background-color: var(--buttoniconbackground-color) !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: var(--text-color) !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
+}
+
+.tableHead {
+  background-color: var(--table-header-background);
+}
+
+.tableRow {
+  color: var(--text-color) !important;
+  text-align: left !important;
+}
+
+.tableCont {
+  height: 42vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.tableCell {
+  color: var(--text-color);
+
+}
+
+#tableTitle {
+  color: var(--text-color);
+}
+
+.pag {
+  color: var(--text-color) !important;
+}
+
+.nameColumn {
+  color: var(--buttoniconbackground-color) !important;
+  width: 11% !important;
+}
+
+.data {
+  color: var(--text-color) !important;
+}
+
+.dataDescription {
+  color: var(--text-color) !important;
+  width: 26% !important;
+}
+
+.checkboxData {
+  color: var(--text-color) !important;
+
+}
+
+.checkboxHead {
+  color: var(--text-color) !important;
+}
+
+/* --------------------------------Modal------------------------------ */
+.modalSubmission {
+  width: 900px !important;
+  margin-top: -65px !important;
+}
+
+.stepsAction {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.ant-modal-footer {
+  display: none !important;
+}
+
+.ant-modal-content {
+  background-color: var(--second-background) !important;
+  color: var(--text-color) !important;
+}
+
+.stepColor {
+  color: var(--text-color) !important;
+}
+
+.ant-steps-item-title {
+  color: var(--text-color) !important;
+}
+
+.ant-modal-close-x {
+  color: var(--text-color) !important;
+}
+
+.anticon-check {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+  background-color: var(--buttoniconbackground-color) !important;
+  border: var(--buttoniconbackground-color) !important;
+}
+
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+/* CreateSubmissionstep1 */
+.submissionStepOne .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent !important;
+}
+
+.submissionStepOne .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-picker {
+  background: transparent !important;
+}
+
+.submissionStepOne .ant-select-arrow {
+  color: var(--text-color) !important;
+}
+
+.submissionStepOne .ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.line {
+  color: var(--text-color) !important;
+  background-color: var(--text-color) !important;
+}
+
+.modalButton {
+  border: none !important;
+  width: 100px !important;
+  height: 40px !important;
+  background-color: var(--buttoniconbackground-color) !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: var(--text-color) !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
+}
+
+.backButton {
+  border: none !important;
+  width: 100px !important;
+  height: 40px !important;
+  background-color: #E9E9E9 !important;
+  box-shadow: 8px 4px 24px rgba(0, 0, 0, 0.03) !important;
+  color: black !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.6% !important;
+  line-height: 19.36px !important;
+  margin: 0 8px !important;
+}
+
+/* CreateSubmission step 2 */
+.steps-content {
+  min-height: 300px;
+}
+
+.submissionStepTwo .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.submissionStepTwo .ant-form-item-label>label::after {
+  display: none !important;
+}
+
+.submissionStepTwo .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+.submissionStepTwo .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: var(--buttoniconbackground-color);
+}
+
+.submissionStepTwo .css-jsexje-MuiSwitch-thumb {
+  background-color: var(--text-color);
+}
+
+/* Responses Modal Heading*/
+[data-theme='compact'] .siteNavigationSteps,
+.siteNavigationSteps {
+  margin-bottom: 100px;
+  box-shadow: 0px -1px 0 0 #e8e8e8 inset;
+}
+
+.siteNavigationSteps .ant-steps-item-icon {
+  display: none;
+}
+
+.siteNavigationSteps .ant-steps-item::before {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+.siteNavigationSteps .ant-steps-item::after {
+  display: none !important;
+}
+
+.siteNavigationSteps .ant-steps-item-title {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Response Modal Properties */
+.responseModalProperties .ant-form-item-label>label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  color: var(--text-color) !important;
+}
+
+.responseModalProperties .ant-input {
+  background: none !important;
+}
+
+.responseModalProperties .ant-input:hover {
+  border-color: var(--text-color) !important;
+}
+
+.responseModalProperties .ant-form-item-label>label::after {
+  display: none !important;
+}
+
+.responseModalProperties .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+.responseModalProperties .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent !important;
+}
+
+.responseModalProperties .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: var(--text-color) !important;
+}
+
+.propertiesButton {
+  position: absolute;
+  color: var(--text-color) !important;
+  width: 120px !important;
+  height: 42px !important;
+  border: 2px solid #FFFFFF !important;
+  filter: drop-shadow(8px 4px 24px rgba(0, 0, 0, 0.03)) !important;
+  border-radius: 5px !important;
+  background-color: transparent !important;
+}
+
+.modalPropertiesButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.update {
+  margin-right: 100px;
+}
+
+.responseUpdateModal {
+  width: 600px !important;
+}
+
+.responseConfirmModal {
+  width: 300px !important;
+}
+
+.modalTextArea {
+  height: 120px !important;
+  resize: none !important;
+  border-radius: 10px !important;
+}
+
+.responseModalText {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 29px;
+}
+
+.stepsContent {
+  margin-top: 20px;
+  min-height: 400px;
+}
+
+/* Modal progress bar */
+.progressbar {
+  display: flex !important;
+  margin-bottom: 20px;
+}
+
+.ant-progress-success-bg,
+.ant-progress-bg {
+  background-color: var(--buttoniconbackground-color) !important;
+}
+
+.ant-progress-text {
+  color: var(--text-color) !important;
+}
+
+.buttonprogressbarminus {
+  margin-right: 10px !important;
+}
+
+.buttonprogressbarplus {
+  margin-left: 10px !important;
+}
+
+.anticon-minus {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.anticon-plus {
+  color: var(--buttoniconbackground-color) !important;
+}
+
+.progressbar .ant-btn-icon-only {
+  height: 20px;
+}
+
+/* responseModalSentences */
+.responseModalSentences .ant-table-container {
+  background-color: var(--second-background) !important;
+}
+
+.responseModalSentences .ant-table-thead>tr>th {
+  background: transparent;
+  color: var(--text-color) !important;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.responseModalSentences .ant-table-tbody > tr > td{
+  color: var(--text-color) !important;
+  text-align: justify;
+  padding: 2px 16px;
+}
+
+.responseModalSentences .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: transparent !important;
+}
+
+.responseModalSentences .ant-pagination {
+  display: none;
+}
+
+/* responseModalParagraph */
+.responseModalParagraph .ant-table-container {
+  background-color: var(--second-background) !important;
+}
+
+.responseModalParagraph .ant-table-thead>tr>th {
+display: none;
+}
+.responseModalParagraph .ant-table-tbody > tr > td{
+  color: var(--text-color) !important;
+  text-align: justify;
+  padding: 2px 16px;
+}
+
+.responseModalParagraph .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-tbody>tr>td.ant-table-cell-row-hover {
+  background: transparent !important;
+}
+
+.responseModalParagraph .ant-pagination {
+  display: none;
+}
+/* responseSimilarDocuments */
+.responseSimilarDocuments{
+  display: flex;
+}
+.responseSimilarDocumentLeft{
+  width: 80%;
+}
+.responseSimilarDocumentRight{
+  width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.similarDocumentCards {
+  padding: 5px;
+}
+/* medium device */
+@media only screen and(min-width: 768px) {
+
+  .middleSection,
+  .dashboard {
+    width: 80%;
+  }
+
+  .dashboard {
+    width: 60%;
+  }
+}
+
+/* small device */
+@media screen and (min-width: 600px) {
+
+  .middleSection,
+  .dashboard {
+    width: 88%;
+    top: 200px;
+  }
+
+  .sideBar {
+    top: 170px;
+  }
+}
+
+/* large devices */
+@media screen and (min-width:992px) {
+
+  .middleSection,
+  .dashboard {
+    width: 90%;
+    top: 160px;
+  }
+
+  .right {
+    right: 15px;
+  }
+
+  .sideBar {
+    top: 160px;
+  }
+}
+
+/* extra small devices */
+@media screen and (max-width:600px) {
+  .bottom-header {
+    flex-wrap: wrap;
+  }
+
+  .right {
+    position: relative;
+    right: -10px;
+  }
+
+  .dashboardBox {
+    width: 300px;
+  }
+
+  .middleSection,
+  .dashboard {
+    width: 78%;
+    top: 240px;
+  }
+
+  .sideBar {
+    top: 240px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .dasboardRowOne {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dasboardRowTwo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
