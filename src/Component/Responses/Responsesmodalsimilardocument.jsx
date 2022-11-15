@@ -7,7 +7,24 @@ const onChange = (e) => {
 const onShowSizeChange = (current, pageSize) => {
     console.log(current, pageSize);
 };
-
+const data = [
+    {
+        content: 'ED-2021-SCC-0158-0878',
+        text: '93 % Match'
+    },
+    {
+        content: 'ED-2021-SCC-0158-0878',
+        text: '93 % Match'
+    },
+    {
+        content: 'ED-2021-SCC-0158-0878',
+        text: '93 % Match'
+    },
+    {
+        content: 'ED-2021-SCC-0158-0878',
+        text: '93 % Match'
+    },
+]
 const Responsesmodalsimilardocument = () => {
     return (
         <>
@@ -15,61 +32,54 @@ const Responsesmodalsimilardocument = () => {
                 <div className="responseSimilarDocumentLeft">
                     <div className="similarDocumentCards">
                         <Row gutter={16}>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                    <br />
-                                    <Checkbox onChange={onChange}>Checkbox</Checkbox>
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
+                            {data?.map((cardData) => {
+                                return (<Col span={6}>
+                                    <Card title="Similar Document" >
+                                        {cardData?.content}
+                                        <br />
+                                        <span className='responseCheckBox'>{cardData?.text}</span>
+                                        <Checkbox onChange={onChange} />
+                                    </Card>
+                                </Col>)
+                            })}
                         </Row>
-
                     </div>
                     <div className="similarDocumentCards">
                         <Row gutter={16}>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
-                            <Col span={6}>
-                                <Card title="Similar Document" bordered={false}>
-                                    ED-2021-SCC-0158-0878
-                                </Card>
-                            </Col>
+                            {data?.map((cardData) => {
+                                return (<Col span={6}>
+                                    <Card title="Similar Document" >
+                                        {cardData?.content}
+                                        <br />
+                                        <span className='responseCheckBox'>{cardData?.text}</span>
+                                        <Checkbox onChange={onChange} />
+                                    </Card>
+                                </Col>)
+                            })}
                         </Row>
                     </div>
-                    <Pagination
-                        showSizeChanger
-                        onShowSizeChange={onShowSizeChange}
-                        defaultCurrent={1}
-                        total={100}
-                    />
+                    <div className="similarDocumentCards">
+                        <Row gutter={16}>
+                            {data?.map((cardData) => {
+                                return (<Col span={6}>
+                                    <Card title="Similar Document" >
+                                        {cardData?.content}
+                                        <br />
+                                        <span className='responseCheckBox'>{cardData?.text}</span>
+                                        <Checkbox onChange={onChange} />
+                                    </Card>
+                                </Col>)
+                            })}
+                        </Row>
+                    </div>
+                    <div className='responsePagination'>
+                        <Pagination
+                            showSizeChanger
+                            onShowSizeChange={onShowSizeChange}
+                            defaultCurrent={1}
+                            total={100}
+                        />
+                    </div>
                 </div>
                 <div className="responseSimilarDocumentRight">
                     <Button className="modalButton">
