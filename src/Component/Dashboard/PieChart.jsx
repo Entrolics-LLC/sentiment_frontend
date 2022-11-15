@@ -19,7 +19,12 @@ const PieChart = () => {
                 },
             },
             dataLabels: {
-                enabled: true
+                enabled: true,
+                style: {
+                    fontSize: '9px',
+                    fontWeight: '400',
+                    color: 'white',
+                },
             },
             colors: ['#37BF96', '#EA9635', '#F9440B'],
             chart: {
